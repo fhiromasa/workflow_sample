@@ -21,7 +21,8 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm install -g vsce
-      - run: vsce publish patch -p ${{ secrets.VSCE_TOKEN}}
+      - run: npm run clean && npm run build
+      - run: vsce publish patch -p ${{ secrets.VSCE_TOKEN }}
 
       # - uses: lannonbr/vsce-action@3.0.0
       #   with:
