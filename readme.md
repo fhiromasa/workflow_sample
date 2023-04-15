@@ -10,3 +10,4 @@ https://github.com/fhiromasa//workflow_sample/settings/secrets
 https://github.com/fhiromasa/workflow_sample/settings/actions
 
 ここの設定でActionsを許可する
+Allow all actions and reusable workflows
