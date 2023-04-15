@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "mainブランチにマージされたら、パブリッシュする。",
   "main": "dist/index.js",
-  "repository": {"url": "https://github.com/fhiromasa/workflow_sample"},
+  "repository": {
+    "url": "https://github.com/fhiromasa/workflow_sample"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },
