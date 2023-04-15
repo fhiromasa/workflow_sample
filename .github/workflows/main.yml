@@ -13,8 +13,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - run: npm install
-      - run: npm run build
+      - name: node package install
+        run: npm install
+      - name: transpile src to dist
+        run: npm run build
       - uses: lannonbr/vsce-action@3.0.0
         with:
           args: "publish -p $VSCE_TOKEN"
