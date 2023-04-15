@@ -1,0 +1,17 @@
+{
+  "name": "workflow_sample",
+  "version": "1.0.0",
+  "description": "mainブランチにマージされたら、パブリッシュする。",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc --build",
+    "clean": "./node_modules/typescript/bin/tsc --build --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18",
+    "typescript": "^5.0.4"
+  }
+}
