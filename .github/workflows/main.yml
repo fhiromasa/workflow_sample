@@ -22,6 +22,7 @@ jobs:
       - run: npm install
       - run: npm install -g @vscode/vsce
       - run: npm run clean && npm run build
+      - run: vsce --version
       - run: vsce publish patch -p ${{ secrets.VSCE_TOKEN }}
 
       # - uses: lannonbr/vsce-action@3.0.0
